@@ -1,0 +1,166 @@
+body 
+{
+    
+    background:url("img/Bg/BS.jpg") lightskyblue no-repeat fixed;
+    background-size: 100% 100%;
+    font-weight: bold;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+article img
+{
+    width: 50%;
+}
+.content
+{
+    display: flex;
+    flex-direction: row;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.STDOC,.STJURY,.STSOUT
+{
+    background-color: rgba(200, 250, 250, 1);
+    margin :20px ;
+    display: flex;
+    box-shadow: 3px 3px  rgba(66, 21, 21, 0.3);
+    border-radius: 10px;
+    align-items: center;
+    padding: 30px 30px;
+}
+.Tit1
+{
+    font-size: 1.5em;
+}
+
+.Tit2
+{
+    color: blue;
+}
+.Sous-Content p
+{
+    margin: 0;
+}
+article .content img
+{
+    float: right;
+}
+.Sous-Content 
+{
+  margin-left: 30px ;
+}
+footer
+{
+    background-color: #343a40;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+.div2
+{
+    color: #ffc107; 
+    text-align: center;
+    font-size: 100px;
+}
+input
+{
+    background:turquoise;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px 15px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+input:hover
+{
+    background: linear-gradient(to right,white,turquoise);
+    color: #343a40;
+}
+.dsp
+{
+    display: block;
+}
+@media screen and (max-width:1024px) {
+    article img
+    {
+        width: 55px;
+    }
+    .STSOUT .Sous-Content,.STDOC .Sous-Content,.STJURY .Sous-Content
+    {
+        margin-right: 20px;
+    }
+    .STDOC,.STJURY,.STSOUT
+    {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:850px) {
+    article img
+    {
+        width: 50%;
+    }
+    .dsp
+    {
+        display: none;
+    }
+    .content
+    {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:700px) {
+    .dsp
+    {
+        display: block;
+    }
+    .content
+    {
+        flex-direction: column;
+    }
+    .STDOC,.STJURY,.STSOUT
+   {
+        margin :5px ;
+        padding: 10px;
+   }
+   .STSOUT
+   {
+        padding: 8px;
+   }
+   .div2
+    {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:390px) {
+    .dsp
+    {
+        width: 100%;
+    }
+    article img
+    {
+        width: 83px;
+    }
+}
+@media screen and (max-width:300px) {
+    body
+    {
+        width: 300px;
+    }
+    footer
+    {
+        width: 300px;
+    }
+}
+@media screen and (max-height:665px) {
+    footer
+    {
+        position: relative;
+        padding-bottom: 10px;
+    }
+}
